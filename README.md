@@ -14,35 +14,35 @@ ITK es una libreria especializada en el tratamiento y procesamiento de imagenes 
 
 * Dentro de **cMake** sera necesario configurar 2 rutas, la primera de ellas (**Where is the source code**) es la carpeta de donde deseamos extraer el codigo a compilar (ruta a la carpeta de **ITK**).
 
-![Captura_de_pantalla_2021-02-04_a_la_s__11.11.07_p._m.](/uploads/137b9d074d21ee9f667d4953b222ee95/Captura_de_pantalla_2021-02-04_a_la_s__11.11.07_p._m..png)
+![image](https://user-images.githubusercontent.com/17130267/107124008-02a5a200-686f-11eb-8d15-ae6fe035909b.png)
 
 * En la segunda ruta sera necesario configurar la ubicación donde requerimos guardar los archivos de compilación (**Where to build binaries**), estos seran almacenados en la carpeta **build** creada anteriormente (en el interior de la carpeta **ITK**)
 
-![Captura_de_pantalla_2021-02-04_a_la_s__11.11.39_p._m.](/uploads/95c342b1dcd98c2b16e4a86058373565/Captura_de_pantalla_2021-02-04_a_la_s__11.11.39_p._m..png)
+![image](https://user-images.githubusercontent.com/17130267/107125866-4c47ba00-687a-11eb-9f38-a1d9c4b902fa.png)
 
 * La sección de rutas debe aparecer diligenciada:
 
-![Captura_de_pantalla_2021-02-04_a_la_s__11.44.51_p._m.](/uploads/4548aba2b0831d87f8edba3d60511bca/Captura_de_pantalla_2021-02-04_a_la_s__11.44.51_p._m..png)
+![image](https://user-images.githubusercontent.com/17130267/107125878-58cc1280-687a-11eb-88b5-cf5f293456d7.png)
 
 * Una vez configuradas las rutas, sera necesario presionar el botón **Generate**, el cual arrojara una ventana solicitando la opción con la que se desea compilar el proyecto, en donde sera necesario dejar la opción por defecto (**Unix MakeFiles**)
 
-![Captura_de_pantalla_2021-02-04_a_la_s__11.19.52_p._m.](/uploads/9cf111704223d22e9027613c366a20a2/Captura_de_pantalla_2021-02-04_a_la_s__11.19.52_p._m..png)
+![image](https://user-images.githubusercontent.com/17130267/107125881-61244d80-687a-11eb-85a6-caf41335225b.png)
 
-* El proceso de compilación es un poco extenso, pero habra terminado satisfactoriamente cuando arroje los textos:
+* El proceso de compilación es un poco extenso, pero habra terminado satisfactoriamente cuando arroje los resultados:
 
-![Captura_de_pantalla_2021-02-04_a_la_s__11.45.46_p._m.](/uploads/f8600ad5451834d3c167636805f8cdc6/Captura_de_pantalla_2021-02-04_a_la_s__11.45.46_p._m..png)
+![image](https://user-images.githubusercontent.com/17130267/107125887-6bdee280-687a-11eb-8726-eba323bc1fb7.png)
 
 * Una vez terminado el proceso de compilación, sera necesario desde la consola de comandos, ingresar a la carpeta **build** (al interior de la carpeta **ITK**) y ejecutar el comandos: **make -j4** y **sudo make install**.
 
-![Captura_de_pantalla_2021-02-05_a_la_s__12.01.25_a._m.](/uploads/198f2446c786305ec7b6ceecc17a3789/Captura_de_pantalla_2021-02-05_a_la_s__12.01.25_a._m..png)
+![image](https://user-images.githubusercontent.com/17130267/107125896-74371d80-687a-11eb-8f82-1329af583271.png)
 
-![Captura_de_pantalla_2021-02-04_a_la_s__11.58.58_p._m.](/uploads/d2ae15f082a6fc27054f3e794c6f77b8/Captura_de_pantalla_2021-02-04_a_la_s__11.58.58_p._m..png)
-
+![image](https://user-images.githubusercontent.com/17130267/107125903-7bf6c200-687a-11eb-9b05-041deb08e941.png)
 
 * Una vez alcanzado este paso, la libreria estara disponible para ser utilizada desde cualquier proyecto C++. Por lo que ahora crearemos una carpeta nueva (en cualquier ubicación de nuestro PC) y alli sera necesario crear un directorio llamado **build** y dos archivos: 
 
     - CMakeLists.txt 
     - Example.cxx
+    
     
 * El archivo **CMakeLists.txt** deberia tener la estructura presentada a continuación: 
 
@@ -82,18 +82,17 @@ int main() {
 
 * Una vez implementados los scripts, sera necesario compilarlos al igual que se realizo con la libreria **ITK**. Desde **cMake** se configura el **source**, al igual que la ruta de destino del **build**.
 
-![Captura_de_pantalla_2021-02-05_a_la_s__12.15.34_a._m.](/uploads/250936067b7ff0760fbc72f0767b2150/Captura_de_pantalla_2021-02-05_a_la_s__12.15.34_a._m..png)
+![image](https://user-images.githubusercontent.com/17130267/107125915-89ac4780-687a-11eb-8edb-ca4bba6e6186.png)
 
 * Finalmente se presiona el botón **Generate** y se dejan las opciones por defecto. La compilación habra terminado cuando se reciban los resultados: 
 
-![Captura_de_pantalla_2021-02-05_a_la_s__12.15.39_a._m.](/uploads/0e029deb5f08e2ced4b6387623d43a00/Captura_de_pantalla_2021-02-05_a_la_s__12.15.39_a._m..png)
-
+![image](https://user-images.githubusercontent.com/17130267/107125918-929d1900-687a-11eb-85e4-ee7025c664c9.png)
 
 * Desde la consola de comandos y al interior de la carpeta **build** se ejecutara el comando **make**.
 
-![Captura_de_pantalla_2021-02-05_a_la_s__12.23.00_a._m.](/uploads/ba22ffadd1a2efed036857886de53b03/Captura_de_pantalla_2021-02-05_a_la_s__12.23.00_a._m..png)
+![image](https://user-images.githubusercontent.com/17130267/107125934-ad6f8d80-687a-11eb-8711-500428702489.png)
 
 * Finalmente, el ejecutable ya estara disponible y podra lanzarce con el comando: 
 
-![Captura_de_pantalla_2021-02-05_a_la_s__12.26.49_a._m.](/uploads/d237ee5a88a246473e1bd99522171f84/Captura_de_pantalla_2021-02-05_a_la_s__12.26.49_a._m..png)
+![image](https://user-images.githubusercontent.com/17130267/107125938-b2ccd800-687a-11eb-9e6f-af93eea8d85c.png)
 
