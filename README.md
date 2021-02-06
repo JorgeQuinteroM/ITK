@@ -43,6 +43,9 @@ ITK es una libreria especializada en el tratamiento y procesamiento de imagenes 
     - CMakeLists.txt 
     - Example.cxx
     
+* La estructura de esta carpeta finalmente sera como:
+
+<img width="696" alt="Captura de pantalla 2021-02-06 a la(s) 1 02 56 p  m" src="https://user-images.githubusercontent.com/17130267/107126084-c593dc80-687b-11eb-9bc1-55e23ac8187b.png">
     
 * El archivo **CMakeLists.txt** deberia tener la estructura presentada a continuación: 
 
