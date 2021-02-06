@@ -1,8 +1,5 @@
 # ITK
 
-# ITK 
-
-
 ITK es una libreria especializada en el tratamiento y procesamiento de imagenes con fines medicos.
 
 
@@ -13,8 +10,7 @@ ITK es una libreria especializada en el tratamiento y procesamiento de imagenes 
 * Descomprimir el ZIP descargado de la libreria **ITK** y al interior de este, crear una carpeta llamada **build**
 * Abrir **cMake**, con el fin de compilar la libreria descargada:
 
-
-![Captura_de_pantalla_2021-02-04_a_la_s__11.10.27_p._m.](/uploads/e66234c069efc5f4bd860690acb4ea1f/Captura_de_pantalla_2021-02-04_a_la_s__11.10.27_p._m..png)
+![image](https://user-images.githubusercontent.com/17130267/107123751-47c8d480-686d-11eb-840a-79ec9cb90161.png)
 
 * Dentro de **cMake** sera necesario configurar 2 rutas, la primera de ellas (**Where is the source code**) es la carpeta de donde deseamos extraer el codigo a compilar (ruta a la carpeta de **ITK**).
 
